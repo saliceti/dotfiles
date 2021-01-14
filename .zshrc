@@ -5,6 +5,7 @@ default_branch() {
 alias cdgit="cd ~/Documents/Boulot/DfE/git"
 alias cdani='cd ~/Documents/Dev/animalz && rvm gemset use animalz'
 alias main="git checkout \$(default_branch)"
+alias sshadd="ssh-add ~/.ssh/id_rsa"
 
 alias gp='git pull'
 alias gl="git log \$(default_branch).. --oneline"
