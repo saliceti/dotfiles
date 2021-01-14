@@ -1,0 +1,33 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Colin Saliceti
+	email =
+
+[push]
+        default = current
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
+[init]
+        templatedir = ~/.git-templates
+
+[core]
+        editor = /usr/bin/vim
+
+[filter "lfs"]
+        smudge = git-lfs smudge %f
+        required = true
+        clean = git-lfs clean %f
+
+
+[rebase]
+	autosquash = true
+[pull]
+	ff = only
